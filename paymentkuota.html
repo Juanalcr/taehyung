@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Payment</title>
+    <script>
+        function welcome() {
+            window.alert("Yeay, transaksi kamu sedang diproses. Tungguin sampai kamu di SMS Yeontan ya!🤩");
+        }
+    </script>
+    <link rel="stylesheet" href="Paket.css">
+    <script
+        src="https://kit.fontawesome.com/64d58efce2.js"
+        crossorigin="anonymous"> </script>
+</head>
+<body>
+    <div class="wrapper-pulsa">
+        <section id="pembayaran"> 
+            <div class="heading-pulsa">
+                <h3> Payment </h3>
+                <p> Belum melakukan pembayaran? Yuk, isi form di bawah ini!</p>
+            </div>
+
+        <div class="bg-card-pembayaran-pulsa">
+            <div class="card-pembayaran-pulsa">
+                <div class="description-pembayaran-pulsa">
+                    <div class="label-pembayaran-pulsa">
+                        <form action="#">
+                        <center>
+                            <div class="input-field-pulsa">
+                                <input type="text" name="name" placeholder="No. Telephone" required/>
+                            </div>
+                            <div class="input-field-pulsa">
+                                <input type="date" name="tanggal" placeholder="Masukkan Tanggal" required />
+                            </div>
+                        </center>
+                        </form>
+                    </div>
+                    <div class="list-pembayaran-pulsa">
+                        <label>
+                            <input type="radio" name="pembayaran" checked>
+                            <img src="Img/OVO.png" value="OVO" />
+                          </label>
+                        
+                          <label>
+                            <input type="radio" name="pembayaran">
+                            <img src="Img/Gopay.png" value="Gopay" />
+                          </label>
+                    </div>
+                    <div class="description-total-pembayaran">
+                        <label name="pulsa" class="deskripsipayment">Pilih Nominal : </label>
+                        <center>
+                        <select name="nominal" id="nominal" class="selectharga" required>
+                        <option value="K1_10000">Kuota KanKer Rp 10.000</option>
+                        <option value="K2_25000">Kuota Anak Kos Rp 25.000</option>
+                        <option value="K3_50000">Kuota Baru Gajian Rp 50.000</option>
+                        <option value="K4_100000">Anak Konglomerat Rp 100.000</option>
+                        </select>
+                         </center>
+                    </div>
+                </div>
+                <div class="ctn-pembayaran">
+                    <a href="#" onclick="welcome()" class="btn-pembayaran"> Bayar </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+        </section>  
+</body>
+</html>
